@@ -49,17 +49,29 @@ When we apply it to the simulated environment, the result is good enough and alm
 ## Development
 SAVSDN can also be applied to other fields with perfect performances.
 
+Other sparks:
+
+![01_sparks 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094312-2b211700-c152-11eb-8ece-12c7dfc55341.gif)
+![02_sparks 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094337-5d327900-c152-11eb-9674-5925d1f98c9c.gif)
+
+
 Badminton games:
 
-![badminton](https://user-images.githubusercontent.com/55908288/120090102-87743e80-c132-11eb-9cf4-00d6d0c333aa.gif)
+![04_badminton 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094158-6111cb80-c151-11eb-95cd-98503b5c8c3b.gif)
+
+![05_badminton 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094197-8ef71000-c151-11eb-9701-9cfa5343bcbc.gif)
+
+![06_badminton 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094206-99190e80-c151-11eb-9d68-a221c02d74e5.gif)
+
 
 Rubbish thrown from upstairs:
 
-![high-rise littering](https://user-images.githubusercontent.com/55908288/120090106-8c38f280-c132-11eb-8779-5fc30f15e4c7.gif)
+![07_high-altitude parabolics 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094295-0fb60c00-c152-11eb-9964-b961017c982e.gif)
 
 Shooting:
 
-![shoot](https://user-images.githubusercontent.com/55908288/120090108-8e02b600-c132-11eb-8ad7-907732a6bd87.gif)
+![03_tracer bullets 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094306-1e042800-c152-11eb-9ac0-e8a53cd3aef9.gif)
+
 
 ## Reference
 YOLOv5 (https://github.com/ultralytics/yolov5) is the image object detector in SAVSDN of this repository.
