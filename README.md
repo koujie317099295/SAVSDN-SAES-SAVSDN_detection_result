@@ -51,17 +51,20 @@ SAVSDN can also be applied to other fields with perfect performances.
 
 Other sparks:
 
-![01_sparks 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094312-2b211700-c152-11eb-8ece-12c7dfc55341.gif)
-![02_sparks 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094337-5d327900-c152-11eb-9674-5925d1f98c9c.gif)
+![other_sparks_1 00_00_00-00_00_08](https://user-images.githubusercontent.com/55908288/120110521-6a765480-c1a0-11eb-8cf4-2324d974d29b.gif)
+
+![other_sparks_2 00_00_00-00_00_10](https://user-images.githubusercontent.com/55908288/120110530-706c3580-c1a0-11eb-9a42-23ebedb5bd71.gif)
+
 
 
 Badminton games:
 
 ![04_badminton 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094158-6111cb80-c151-11eb-95cd-98503b5c8c3b.gif)
 
-![05_badminton 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094197-8ef71000-c151-11eb-9701-9cfa5343bcbc.gif)
+![badminton2 00_00_02-00_00_19](https://user-images.githubusercontent.com/55908288/120110543-77934380-c1a0-11eb-809c-0515827e8185.gif)
 
-![06_badminton 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094206-99190e80-c151-11eb-9d68-a221c02d74e5.gif)
+![badminton3 00_00_02-00_00_12](https://user-images.githubusercontent.com/55908288/120110553-7cf08e00-c1a0-11eb-89b9-3ba0b78cc153.gif)
+
 
 
 Rubbish thrown from upstairs:
