@@ -32,17 +32,20 @@ When we apply it to the simulated environment, the result is good enough and alm
 
 ## Development
 SAVSDN can also be applied to other fields with perfect performances.
-Badminton games.
+Badminton games:
 
 ![badminton](https://user-images.githubusercontent.com/55908288/120090102-87743e80-c132-11eb-9cf4-00d6d0c333aa.gif)
 
-Rubbish thrown from upstairs.
+Rubbish thrown from upstairs:
 
 ![high-rise littering](https://user-images.githubusercontent.com/55908288/120090106-8c38f280-c132-11eb-8779-5fc30f15e4c7.gif)
 
-Shooting.
+Shooting:
 
 ![shoot](https://user-images.githubusercontent.com/55908288/120090108-8e02b600-c132-11eb-8ad7-907732a6bd87.gif)
 
 ## Reference
 YOLOv5 (https://github.com/ultralytics/yolov5) is the image object detector in SAVSDN of this repository.
+
+## Details
+If you have any question, please contact us by emailing to 317099295@qq.com.
