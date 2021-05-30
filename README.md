@@ -32,6 +32,7 @@ When we apply it to the simulated environment, the result is good enough and alm
 
 ## Development
 SAVSDN can also be applied to other fields with perfect performances.
+
 Badminton games:
 
 ![badminton](https://user-images.githubusercontent.com/55908288/120090102-87743e80-c132-11eb-9cf4-00d6d0c333aa.gif)
