@@ -4,7 +4,7 @@ The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed fly
 ## What is SAES?
 As far as we know, the Simulated Aero Engine Spark (SAES) data set is the first published data set for aero engine anomalous spark detection. The data set contains 26,382 images and correlated spark tags in total. The images come from a video of 17 minutes and 35 seconds in length, captured by a Hikvision DS-2CD3T45FP1-LS camera with a frame rate of 25 fps. All the images were taken from a simulation aero engine chamber, which we constructed. The inner chamber comprised a set of complex interferences, including complex illumination changes, colorful shaking cables, aero engine vibration, flickering flames, unsteady video interface, and shining metal surfaces.
 
-The simulated aero engine chamber:T
+The simulated aero engine chamber:
 
 ![image](https://user-images.githubusercontent.com/55908288/120090714-256a0800-c137-11eb-93e3-2e5e2386db3a.png)
 
