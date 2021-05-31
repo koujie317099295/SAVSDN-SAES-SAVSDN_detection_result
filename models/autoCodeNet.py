@@ -193,13 +193,13 @@ class LongShortTimeAutoEncodeDecoder(nn.Module):
             ):
         super(LongShortTimeAutoEncodeDecoder, self).__init__() 
 
-        #Motion Aware Block    
+        #Motion encoding ConvLSTM: 
         self.convLstmMotionAwareBlock = ConvLSTM(3, 3, (3,3), 1, True, True, False)
 
-        #Motion Pred Block
+        #Scene encoding ConvLSTM:
         self.convLstmMotionPredBlock = ConvLSTM(3, 3, (3,3), 1, True, True, False)
         
-        #Decode
+        #Information fusion based-decode Decoding ConvLSTM:
         self.convLstmDecode = ConvLSTM(3, 3, (3,3), 1, True, True, False)
         
     def forward(self,inputs9):  
@@ -213,12 +213,12 @@ class LongShortTimeAutoEncodeDecoder(nn.Module):
         inputs13355779=torch.cat([inputs13355779,inputs79],0)
         
         c13355779=self.convLstmMotionAwareBlock(inputs13355779)[0][1]#B C H W 4 3 512 512
-        #scene encode:
+        #Scene encode:
         c133557=c13355779[0:3,:,:,:]#B C H W 3 3 512 512
         c133557=torch.unsqueeze(c133557,0)#B C H W 3 3 512 512 --> B T C H W 1 3 3 512 512 
         
         c79Pred=self.convLstmMotionPredBlock(c133557)[0][1]#cPred #B C H W
-        #information fusion based-decode:
+        #Information fusion based-decode:
         c79=c13355779[3,:,:,:]#C H W 3 512 512
         cReal=torch.unsqueeze(c79,0)#C H W-->T C H W
         cReal=torch.unsqueeze(cReal,0)#B C H W-->B T C H W 1 1 3 512 512 
