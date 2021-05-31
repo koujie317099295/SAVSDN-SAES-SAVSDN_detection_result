@@ -76,7 +76,7 @@ Shooting:
 ![03_tracer bullets 00_00_00-00_00_30](https://user-images.githubusercontent.com/83768527/120094306-1e042800-c152-11eb-9ac0-e8a53cd3aef9.gif)
 
 
-## Reference
+## References
 YOLOv5 (https://github.com/ultralytics/yolov5) is the image object detector in SAVSDN of this repository.
 
 ## Acknowledgements
