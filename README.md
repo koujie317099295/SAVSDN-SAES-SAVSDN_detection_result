@@ -1,4 +1,4 @@
-# (XJTU)SAVSDN-SAES-SAVSDN_detection_result
+# XJTU-SAVSDN-SAES-SAVSDN_detection_result
 ## What is SAVSDN?
 The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed flying sparks in visible light video, which consists of an information fusion-based cascading video codec-YOLOv5 structure. Existing image object detectors and video object detectors have a large amount of over-detection for spark detection. The video codec in SAVSDN can be cascaded with any image object detector, and the codec can sense scenes and sparks through an improved sequence-to-sequence model.
 ## What is SAES?
