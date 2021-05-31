@@ -80,7 +80,7 @@ SAVSDN can also be applied to other fields with perfect performances.
 YOLOv5 (https://github.com/ultralytics/yolov5) is the image object detector in SAVSDN of this repository.
 
 ## Acknowledgements
-This research is commissioned by Aero Engine Corporation of China (AECC) Sichuan Gas Turbine Establishment.
+This research is commissioned by AECC (Aero Engine Corporation of China) Sichuan Gas Turbine Establishment.
 
 ## Details
 If you have any question, please contact us by emailing to kj317099295@stu.xjtu.edu.cn.
