@@ -79,5 +79,8 @@ Shooting:
 ## Reference
 YOLOv5 (https://github.com/ultralytics/yolov5) is the image object detector in SAVSDN of this repository.
 
+## Acknowledgements
+This research is commissioned by AECC Sichuan Gas Turbine Establishment.
+
 ## Details
 If you have any question, please contact us by emailing to 317099295@qq.com.
