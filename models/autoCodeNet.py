@@ -135,7 +135,7 @@ class ConvLSTM(nn.Module):
         b, _, _, h, w = input_tensor.size()
 
         # Implement stateful ConvLSTM
-        if hidden_state is None:#h,c=hidden_state[layer_idx] convLSTM有几层就有几组h,c初始状态 一层convLSTM有一个convLSTM cell 而hidden_state本身是一个tuple其第一个元素为h tensor 第二个元素为c tensor 这两个tensor的形状均为B C H W 即hidden_state=(tensor1,tensor2) tensor1.shape=B C H W
+        if hidden_state is None:
             # Since the init is done in forward. Can send image size here
             hidden_state = self._init_hidden(batch_size=b,
                                              image_size=(h, w))
@@ -203,7 +203,7 @@ class LongShortTimeAutoEncodeDecoder(nn.Module):
         self.convLstmDecode = ConvLSTM(3, 3, (3,3), 1, True, True, False)
         
     def forward(self,inputs9):  
-        #运动编码：convLSTM对4个3帧分别进行运动编码
+        #Motion encode：
         inputs13=torch.transpose(inputs9[:,:,0:3,:,:], 1,2)#B C T H W --> B T C H W #1 2 3<-->0 1 2
         inputs35=torch.transpose(inputs9[:,:,2:5,:,:], 1,2)#B C T H W --> B T C H W #3 4 5<-->2 3 4
         inputs57=torch.transpose(inputs9[:,:,4:7,:,:], 1,2)#B C T H W --> B T C H W #5 6 7<-->4 5 6
@@ -213,12 +213,12 @@ class LongShortTimeAutoEncodeDecoder(nn.Module):
         inputs13355779=torch.cat([inputs13355779,inputs79],0)
         
         c13355779=self.convLstmMotionAwareBlock(inputs13355779)[0][1]#B C H W 4 3 512 512
-        #场景编码:
+        #scene encode:
         c133557=c13355779[0:3,:,:,:]#B C H W 3 3 512 512
         c133557=torch.unsqueeze(c133557,0)#B C H W 3 3 512 512 --> B T C H W 1 3 3 512 512 
         
         c79Pred=self.convLstmMotionPredBlock(c133557)[0][1]#cPred #B C H W
-        #火星分割解码：将场景编码作为convLSTM的ct-1状态，7~9帧运动编码作为convLSTM的x输入，输出ht状态作为火星分割解码 后续可送入YOLOv5再次筛选火星分割结果
+        #information fusion based-decode:
         c79=c13355779[3,:,:,:]#C H W 3 512 512
         cReal=torch.unsqueeze(c79,0)#C H W-->T C H W
         cReal=torch.unsqueeze(cReal,0)#B C H W-->B T C H W 1 1 3 512 512 
