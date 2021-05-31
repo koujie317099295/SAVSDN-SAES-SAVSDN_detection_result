@@ -42,7 +42,7 @@ SAVSDN is tested in a simulated environment and real scene.
 ![image](https://user-images.githubusercontent.com/55908288/120088969-a40b7900-c128-11eb-9265-f8be2c43f511.png) ![image](https://user-images.githubusercontent.com/55908288/120088975-b4235880-c128-11eb-8523-68c936d03faa.png)
 ![image](https://user-images.githubusercontent.com/55908288/120088977-c00f1a80-c128-11eb-8e48-47279c8a642f.png) ![image](https://user-images.githubusercontent.com/55908288/120088979-c43b3800-c128-11eb-8402-22f2aba17e2a.png)
 
-When we apply it to the simulated environment, the result is good enough and almost no mistake exists.
+When we apply it to the simulated aero engine chamber, the result is good enough and almost no mistake exists.
 
 ![sparks](https://user-images.githubusercontent.com/55908288/120089937-5a735c00-c131-11eb-81c3-bf0d9bda7df9.gif)
 
