@@ -1,6 +1,6 @@
 # XJTU SAVSDN-SAES-SAVSDN_detection_result
 ## What is SAVSDN?
-The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed flying sparks in visible light video, which consists of an information fusion-based cascading video codec-YOLOv5 structure. Existing image object detectors and video object detectors have a large amount of over-detection for spark detection. The video codec in SAVSDN can be cascaded with any image object detector, and the codec can sense scenes and sparks through an improved sequence-to-sequence model. This video spark detection technology has been published in a journal article, and you can get more details from https://doi.org/10.3390/s21134453 .
+The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed flying sparks in visible light video, which consists of an information fusion-based cascading video codec-YOLOv5 structure. Because there are a lot of disturbances in the environment that have the characteristics of bright line segments that are exactly the same as sparks. Existing image object detectors and video object detectors have a large amount of over-detection for spark detection. The video codec in SAVSDN can be cascaded with any image object detector, and the codec can sense scenes and sparks through an improved sequence-to-sequence model. This video spark detection technology has been published in a journal article, and you can get more details from https://doi.org/10.3390/s21134453 .
 ### The three main difficulties in video spark intelligent detection:
 ![1625052610](https://user-images.githubusercontent.com/83768527/123953358-b69ff900-d9d9-11eb-8be8-a5766e9a96e3.png)
 
@@ -99,7 +99,7 @@ If you have any question, please contact us by emailing to kj317099295@stu.xjtu.
 
 
 ## 什么是SAVSDN？
-场景感知视频火花检测网络（SAVSDN）可以检测可见光视频中的高速飞溅火花，它由基于信息融合的级联视频编解码器-YOLOv5结构组成。 现有的图像目标检测器和视频目标检测器对于火花检测存在大量的过检测。 SAVSDN中的视频编解码器可以与任何图像目标检测器级联，编解码器可以通过改进的序列到序列模型感知场景和火花。 该视频火花检测技术已发表在期刊文章中，您可以从 https://doi.org/10.3390/s21134453 获得更多详细信息。
+场景感知视频火花检测网络（SAVSDN）可以检测可见光视频中的高速飞溅火花，它由基于信息融合的级联视频编解码器-YOLOv5结构组成。因为环境中存在着大量具有和火花完全一致的亮线段特征的干扰。 现有的图像目标检测器和视频目标检测器对于火花检测存在大量的过检测。 SAVSDN中的视频编解码器可以与任何图像目标检测器级联，编解码器可以通过改进的序列到序列模型感知场景和火花。 该视频火花检测技术已发表在期刊文章中，您可以从 https://doi.org/10.3390/s21134453 获得更多详细信息。
 ### 智能视频火花检测的三个主要难点：
 ![1625052610](https://user-images.githubusercontent.com/83768527/123953358-b69ff900-d9d9-11eb-8be8-a5766e9a96e3.png)
 
