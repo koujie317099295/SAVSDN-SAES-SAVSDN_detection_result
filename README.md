@@ -1,6 +1,16 @@
 # XJTU SAVSDN-SAES-SAVSDN_detection_result
 ## What is SAVSDN?
-The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed flying sparks in visible light video, which consists of an information fusion-based cascading video codec-YOLOv5 structure. Existing image object detectors and video object detectors have a large amount of over-detection for spark detection. The video codec in SAVSDN can be cascaded with any image object detector, and the codec can sense scenes and sparks through an improved sequence-to-sequence model.
+The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed flying sparks in visible light video, which consists of an information fusion-based cascading video codec-YOLOv5 structure. Existing image object detectors and video object detectors have a large amount of over-detection for spark detection. The video codec in SAVSDN can be cascaded with any image object detector, and the codec can sense scenes and sparks through an improved sequence-to-sequence model. This video spark detection technology has been published in a journal article, and you can get more details from https://doi.org/10.3390/s21134453.
+### The three main difficulties in video spark intelligent detection:
+![1625052610](https://user-images.githubusercontent.com/83768527/123953358-b69ff900-d9d9-11eb-8be8-a5766e9a96e3.png)
+
+
+
+### The network structure of SAVSDN：
+![1625052649(1)](https://user-images.githubusercontent.com/83768527/123953362-b7d12600-d9d9-11eb-901f-8ae4b61c1ce3.png)
+
+
+
 ## What is SAES?
 As far as we know, the Simulated Aero Engine Spark (SAES) data set is the first published data set for aero engine anomalous spark detection. The data set contains 26,382 images and correlated spark tags in total. The images come from a video of 17 minutes and 35 seconds in length, captured by a Hikvision DS-2CD3T45FP1-LS camera with a frame rate of 25 fps. All the images were taken from a simulation aero engine chamber, which we constructed. The inner chamber comprised a set of complex interferences, including complex illumination changes, colorful shaking cables, aero engine vibration, flickering flames, unsteady video interface, and shining metal surfaces.
 ### The simulated aero engine chamber:
@@ -83,4 +93,5 @@ YOLOv5 (https://github.com/ultralytics/yolov5) is the image object detector in S
 This research is commissioned by AECC (Aero Engine Corporation of China) Sichuan Gas Turbine Establishment.
 
 ## Details
+This video spark detection technology has been published in a journal article, and you can get more details from https://doi.org/10.3390/s21134453.
 If you have any question, please contact us by emailing to kj317099295@stu.xjtu.edu.cn.
