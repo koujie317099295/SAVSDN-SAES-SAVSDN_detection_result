@@ -94,4 +94,5 @@ This research is commissioned by AECC (Aero Engine Corporation of China) Sichuan
 
 ## Details
 This video spark detection technology has been published in a journal article, and you can get more details from https://doi.org/10.3390/s21134453.
+
 If you have any question, please contact us by emailing to kj317099295@stu.xjtu.edu.cn.
