@@ -130,7 +130,7 @@ If you have any question, please contact us by emailing to kj317099295@stu.xjtu.
 
 ## SAES数据集和SAVSDN的检测效果演示视频下载链接:
 ```
-https://pan.baidu.com/s/1A7ocxF9LS8GrKGlJFQYpgA   (Extraction code:o0rc)
+https://pan.baidu.com/s/1A7ocxF9LS8GrKGlJFQYpgA   (提取码:o0rc)
 ```
 ## 如何执行火花检测代码?
 我们提出来的视频编解码器源码位于 "models/autoCodeNet.py" ，并且一个训练好的可以直接进行火星检测的模型文件位于 "weights/sparkDetectYolov5s/epoch17.pt"。
