@@ -4,10 +4,16 @@ The Scene-Aware Video Spark Detection Network (SAVSDN) can detect high-speed fly
 ### The three main difficulties in video spark intelligent detection:
 ![1625052610](https://user-images.githubusercontent.com/83768527/123953358-b69ff900-d9d9-11eb-8be8-a5766e9a96e3.png)
 
+The figure shows the three difficulties faced by intelligent spark detection. First, the feature of a single spark is a bright line segment, which is completely consistent with the features of the lights, metal cables, and reflected light in the image. Second,a lack of abnormal spark data hinders the training of supervised learning models. Third, more than 10 cameras are used to monitor the status of aero engines, which requires the spark detection algorithm to be real-time and parallel.
+
+It is worth noting that because the high-speed airflow in the aero engine test cabin will cause the camera to shake, the video images are often accompanied by jitter, which causes all the line segments in the scene to also move in complex time series.
+
 
 
 ### The network structure of SAVSDN：
 ![1625052649(1)](https://user-images.githubusercontent.com/83768527/123953362-b7d12600-d9d9-11eb-901f-8ae4b61c1ce3.png)
+
+In fact, we proposed a real-time anomalous spark video detection method based on deep learning for aero engine testing. Each time, the input was a sequence of nine consecutive frames, and the output was the position of all the anomalous sparks in the last three frames. In particular, the first seven frames were used by SAVSDN to perceive the bright line segments interference in the scene, so that the network could easily distinguish the sparks and the interference. First of all, nine frames of image sequences were inputted for preprocessing, including image size normalization and image grayscale. Then, the input was divided into 4 groups of image sub-sequences in chronological order, and each group of image sub-sequence contained 3 consecutive images. Next, four weight-sharing ConvLSTM were used to extract motion feature images from the four image sub-sequences, respectively. Moreover, a new sequence will be created by integrating the feature images corresponding to the first three groups of image sub-sequences. In addition, the new sequence will be sent to another ConvLSTM to extract scene perception feature images, which contains long time existing interference of bright line segments. Moreover, after obtaining scene perception feature images, another ConvLSTM was used to integrate the scene perception feature images and the motion feature images corresponding to the last image sub-sequence, and was then decoded to obtain a spatio-temporal deep feature image. The spatio-temporal deep feature image contained the spatio-temporal features that could distinguish sparks from the interference of bright line segments, which will be sent to the subsequent image object detector to detect spark features again. If the image object detector detects a spark, the human-computer interaction terminal will alarm and continuously monitor, otherwise continue to monitor.
 
 
 
@@ -103,10 +109,16 @@ If you have any question, please contact us by emailing to kj317099295@stu.xjtu.
 ### 智能视频火花检测的三个主要难点：
 ![1625052610](https://user-images.githubusercontent.com/83768527/123953358-b69ff900-d9d9-11eb-8be8-a5766e9a96e3.png)
 
+图中显示了智能火花检测面临的三大难点。 首先，单个火花的特征是一条亮线段，这与图像中的灯、金属电缆和反射光的特征完全一致。 其次，异常火花数据的缺乏阻碍了监督学习模型的训练。 第三，使用10多个摄像头来监控航空发动机的状态，这就要求火花检测算法是实时并行的。
+
+值得注意的是，由于航空发动机试验舱内存在的高速气流会导致摄像头的晃动，因此视频画面往往伴随着抖动，导致场景中所有的线段也在复杂的时序运动。
+
 
 
 ### SAVSDN的网络结构：
 ![1625052649(1)](https://user-images.githubusercontent.com/83768527/123953362-b7d12600-d9d9-11eb-901f-8ae4b61c1ce3.png)
+
+事实上，我们提出了一种基于深度学习的航空发动机测试实时异常火花视频检测方法。每次，输入都是连续九帧的序列，输出是最后三帧中所有异常火花的位置。特别是前七帧被SAVSDN用来感知场景中的亮线段干扰，让网络很容易区分火花和干扰。首先输入九帧图像序列进行预处理，包括图像尺寸归一化和图像灰度。然后将输入按时间顺序分为4组图像子序列，每组图像子序列包含3张连续的图像。接下来，使用四个权重共享 ConvLSTM 分别从四个图像子序列中提取运动特征图像。此外，将通过整合前三组图像子序列对应的特征图像来创建新序列。此外，新序列将被发送到另一个 ConvLSTM 以提取场景感知特征图像，其中包含长时间存在的亮线段干扰。此外，在获得场景感知特征图像后，再使用另一个ConvLSTM将场景感知特征图像和最后一个图像子序列对应的运动特征图像进行融合，然后解码得到时空深度特征图像。时空深度特征图像包含能够区分火花和亮线段干扰的时空特征，这些时空特征将被发送到后续的图像对象检测器以再次检测火花特征。如果图像物体检测器检测到火花，人机交互终端会报警并持续监控，否则继续监控。
 
 
 
